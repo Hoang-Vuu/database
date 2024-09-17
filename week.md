@@ -39,7 +39,7 @@ select location from game where screen_name = "Vesa";
 #8:
 select co2_consumed from game where screen_name = "Ilkka";
 
-![Screenshot 2024-09-17 140014](https://github.com/user-attachments/assets/1fca5ae0-256d-4047-8108-e7ed765be7cd)
+![Screenshot 2024-09-17 140556](https://github.com/user-attachments/assets/56140f38-97b6-47b3-b74a-989ab92ce67a)
 
 
 
