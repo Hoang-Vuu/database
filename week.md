@@ -364,3 +364,33 @@ from airport
 ![10](https://github.com/user-attachments/assets/1031bfc5-bfd0-4bcc-a405-e95b4750b94f)
 
 
+Exercise 7:
+
+#1:
+update game
+set  location = (select ident from airport where name = "Nottingham Airport"), co2_consumed = co2_consumed+500
+where screen_name = "Vesa";
+
+
+![1](https://github.com/user-attachments/assets/c068c37a-6ea6-4886-9813-0652d6376103)
+
+
+#2:
+
+
+#3:
+delete from goal_reached;
+select * from goal_reached;
+
+
+![Screenshot 2024-09-29 203422](https://github.com/user-attachments/assets/e7c461da-8acd-47d6-a5bc-9514b6c79565)
+
+
+#4:
+delete from game;
+select * from game;
+
+
+![4](https://github.com/user-attachments/assets/cfe3a3eb-19f0-47ce-8454-2b24bbb8d910)
+
+
