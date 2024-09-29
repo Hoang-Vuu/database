@@ -131,11 +131,41 @@ where airport.iso_country = country.iso_country and ident = location and game.id
 ![Screenshot 2024-09-17 203718](https://github.com/user-attachments/assets/903aa1f4-098e-4f2f-b4bd-d5761426b397)
 
 
+Exercise 4:
+
+#1:
+select country.name as "country name", airport.name as "airport name"
+from country inner join airport on airport.iso_country = country.iso_country
+where country.name = "Finland" and scheduled_service = "yes";
+
+![Screenshot 2024-09-29 193448](https://github.com/user-attachments/assets/2518074d-3c44-4ba6-976e-83def2de5cbd)
 
 
+#2:
+select screen_name, airport.name
+from game inner join airport on location = ident;
+
+![2](https://github.com/user-attachments/assets/8a8386f6-a2aa-4694-8fc2-3d5559145933)
+
+#3:
+select screen_name, country.name
+from game inner join airport on location = ident inner join country on airport.iso_country = country.iso_country;
 
 
+![3](https://github.com/user-attachments/assets/dbcba7df-aca1-422c-819c-a84927fbcb85)
 
+#4:
+select airport.name, screen_name
+from airport left join game on ident = location where name like "%Hels%";
+
+![4](https://github.com/user-attachments/assets/fb283bb8-923c-4374-9cf1-aba758c7b5d3)
+
+#5:
+select name, screen_name
+from goal left join goal_reached on goal.id = goal_id  left join game on game.id = game_id;
+
+
+![5](https://github.com/user-attachments/assets/61c84260-3937-4e53-a354-31035c9d0185)
 
 
 
